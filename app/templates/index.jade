@@ -1,0 +1,29 @@
+doctype
+html.no-js
+  head
+    meta(charset='utf-8')
+    title Beemarket Admin
+    meta(name='description', content='')
+    meta( http-equiv="X-UA-Compatible" content="IE=9")
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // Place favicon.ico and apple-touch-icon.png in the root directory
+    block stylesheets
+      include partials/stylesheets.jade
+
+  body.admin
+    //if lt IE 10
+      p.browsehappy
+         You are using an strong outdated browser. Please
+          a(href='http://browsehappy.com/') upgrade your browser
+        to improve your experience.
+    .modal-holder
+    block head
+      include partials/head.jade
+    block content
+      include partials/content.jade
+
+    block foot
+      include partials/foot.jade
+
+    block scripts
+      include partials/scripts.jade

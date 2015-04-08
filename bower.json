@@ -1,0 +1,13 @@
+{
+  "name": "nied",
+  "private": true,
+  "dependencies": {
+    "modernizr": "~2.6.2",
+    "jquery": "~1.11.0",
+    "jquery-validate": "~1.13.1",
+    "bootstrap": "~3.3.1",
+    "font-awesome": "~4.2.0",
+    "perfect-scrollbar": "~0.5.8"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,64 @@
+
+.main-container.clearfix
+  aside.nav-wrap
+    nav.site-nav.clearfix
+      ul.list-unstyled.nav-list
+        li.nav-list__item.active: a(href="javascript:;").nav-list__link
+          i.fa.fa-desktop.nav-list__link__icon
+          span.nav-list__link__label Dashboard
+        li.nav-list__item
+          a(href="javascript:;").nav-list__link
+            i.fa.fa-user.nav-list__link__icon
+            span.nav-list__link__label Usuarios
+            i.fa.fa-angle-right.right.nav-list__link__icon--arrow
+          ul.list-unstyled.sub-nav-list
+            li.sub-nav-list__item: a(href="") Todos los Clientes
+            li.sub-nav-list__item: a(href="") Nuevo Cliente
+        li.nav-list__item
+          a(href="javascript:;").nav-list__link
+            i.fa.fa-users.nav-list__link__icon
+            span.nav-list__link__label Clientes
+            i.fa.fa-angle-right.right.nav-list__link__icon--arrow
+          ul.list-unstyled.sub-nav-list
+            li.sub-nav-list__item: a(href="https://www.google.com.mx/?gfe_rd=cr&ei=KCG7VI7mKISn8wem44DQBg&gws_rd=ssl") Todos los Clientes
+            li.sub-nav-list__item: a(href="") Nuevo Cliente
+        li.nav-list__item
+          a(href="javascript:;").nav-list__link
+            i.fa.fa-gears.nav-list__link__icon
+            span.nav-list__link__label Configuración
+            i.fa.fa-angle-right.right.nav-list__link__icon--arrow
+          ul.list-unstyled.sub-nav-list
+            li.sub-nav-list__item: a(href="") Métodos de Envío
+            li.sub-nav-list__item: a(href="") Métodos de Pago
+            li.sub-nav-list__item: a(href="") Eventos
+        li.nav-list__item
+          a(href="javascript:;").nav-list__link
+            i.fa.fa-barcode.nav-list__link__icon
+            span.nav-list__link__label Productos
+            i.fa.fa-angle-right.right.nav-list__link__icon--arrow
+          ul.list-unstyled.sub-nav-list
+            li.sub-nav-list__item: a(href="") Todos los Productos
+            li.sub-nav-list__item: a(href="") Nuevo Producto
+        li.nav-list__item: a(href="#").nav-list__link
+          i.fa.fa-cubes.nav-list__link__icon
+          span.nav-list__link__label Pedidos
+  .content-container
+    .page.schedules
+      .page-head
+      .page-wrap
+        .row: .col-lg-12
+            .panel
+              .panel-heading
+                span Nombre del panel
+              .panel-body
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis quibusdam at nam illum officia ducimus perferendis veritatis, temporibus omnis id debitis optio, molestias maxime, neque ullam quisquam quaerat dicta accusamus.
+        .row: .col-lg-12
+          #schedule
+        .row: .col-lg-6
+          .panel
+            button(class="btn btn-primary btn-sm") Primary
+            button(class="btn btn-success btn-sm") Succes
+            button(class="btn btn-danger btn-sm") Danger
+            button(class="btn btn-warning btn-sm") Warning
+            button(class="btn btn-info btn-sm") Info
+

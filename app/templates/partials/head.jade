@@ -1,0 +1,53 @@
+header.site-head
+  .site-head__nav
+    a(href="/", class="site-head__logo") Beemarket
+    span.nav-trigger.fa.fa-bars
+  .site-head__wrap
+    nav.list-unstyled.head-nav
+      li.head-nav__item.head-nav__item--notification
+        a(href="#", class="head-nav__option head-nav__option--notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+          i.fa.fa-bell-o.option__icon
+          span.badge.badge-danger.badge-xs 3
+        .panel.panel-default.dropdown-menu
+          .panel-heading
+            p.panel-title You have : <strong>3</strong> new notifications
+          ul.list-unstyled.noti-menu
+            li.noti-menu__item
+              a(href="#" class="noti-menu__message clearfix")
+                i.fa.fa-bolt.noti-menu__message__type.left
+                .noti-menu__message__body.left
+                  strong.noti-menu__message__title New app updated
+                  span.small few secs ago
+            li.noti-menu__item: a(href="#" class="noti-menu__message clearfix")
+              i.fa.fa-info.noti-menu__message__type.left
+              .noti-menu__message__body.left
+                strong.noti-menu__message__title Jhon left message
+                span.small 3 min ago
+            li.noti-menu__item: a(href="#" class="noti-menu__message clearfix")
+              i.fa.fa-bolt.noti-menu__message__type.left
+              .noti-menu__message__body.left
+                strong.noti-menu__message__title New app updated
+                span.small 2 hours ago
+
+
+          .panel-footer
+            p.small.zero
+              a(href="#") View all notifications
+              i.fa.fa-circle-o-notch.right
+      li.head-nav__item.head-nav__item--profile.dropdown
+        a(href="#", class="head-nav__option head-nav__option--profile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+          img(src="images/admin.jpg", alt="" class="img-circle option__profile")
+        .panel.panel-default.dropdown-menu
+          .panel-body
+            figure.profile__photo.left
+              img(src="images/admin.jpg", alt="" class="img-responsive")
+              a(href="#") Foto
+            .profile__info.right
+              p: strong Cassandra Barrett
+              p cassandra.b@gmail.com
+              a(href="#" class="btn btn-primary btn-xs") Ver Perfil
+          .panel-footer.clearfix
+            a.btn.btn-default.btn-sm.left(href="#") Cuenta
+            a.btn.btn-default.btn-sm.btn-primary.right(href="#") Cerrar Sesión
+
+

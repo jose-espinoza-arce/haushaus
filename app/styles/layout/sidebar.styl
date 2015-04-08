@@ -1,0 +1,100 @@
+.main-container
+  .nav-wrap
+    width 279px
+    position fixed
+    overflow-y auto
+    top 119px
+    bottom 0
+    transform translate(-279px,0)
+  .nav-wrap
+    background-color black_colors[4]
+    box-shadow inset -2px 0 2px lighten(black_colors[4], 2%)
+    transition transform .25s ease-in
+    z-index 100
+
+@media (min-width : 768px)
+  .admin
+    &.nav-min
+      .nav-wrap
+        overflow visible
+  .main-container
+    .nav-wrap
+      overflow hidden
+      top 60px
+      transform translate(0,0)
+.nav-list
+  .nav-list__item
+    position relative
+    &.active > .nav-list__link
+      background-color yellow_colors[2]
+      color black_colors[2]
+    &.active > a .nav-list__link__icon--arrow
+      transform rotate(90deg)
+
+  .nav-list__link
+    display block
+    color white_colors[0]
+    padding 1em
+    padding-left 1.5em
+    transition .25s ease
+    &:hover
+      text-decoration none
+      color yellow_colors[2]
+  .nav-list__link__icon,
+  .nav-list__link__label
+    display inline-block
+    vertical-align middle
+  .nav-list__link__icon
+    margin-right 0.75em
+  .nav-list__link__icon--arrow
+    transition transform 0.25s ease
+    margin-top 0.25em
+
+.sub-nav-list
+  display none
+  background-color darken( black_colors[4], 20%)
+  .sub-nav-list__item > a
+    color black_colors[0]
+    display block
+    padding 0.75em 3.25em
+    &:hover
+      text-decoration none
+      color white_colors[0]
+
+.admin
+  &.off-canvas
+    .nav-wrap
+      transform translate(0,0)
+  &.nav-min
+    .nav-wrap
+      width 60px
+
+
+    .nav-list
+      > .nav-list__item
+        &:hover, &:active
+          .sub-nav-list
+            display block !important
+        .sub-nav-list
+          display none !important
+          position absolute
+          min-width 200px
+          left 100%
+          border none
+          top 0
+          z-index
+          .sub-nav-list__item > a
+            min-width 250px
+            white-space pre
+            padding 14px 20px
+    .nav-list__link
+      padding 1em 0
+      text-align center
+    .nav-list__link__icon
+      font-size 17px
+      margin-right 0
+    .nav-list__link__label,
+    .nav-list__link__icon--arrow
+      display none
+
+

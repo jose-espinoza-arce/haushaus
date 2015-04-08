@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Beemarket Admin</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory-->
+    <!-- build:css styles/vendor.css-->
+    <!-- bower:css-->
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/perfect-scrollbar/min/perfect-scrollbar.min.css">
+    <!-- endbower-->
+    <!-- endbuild-->
+    <!-- build:css styles/main.css-->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild-->
+    <!-- build:js scripts/vendor/modernizr.js-->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild-->
+  </head>
+  <body class="admin">
+    <!--if lt IE 10
+    p.browsehappy
+       You are using an strong outdated browser. Please
+        a(href='http://browsehappy.com/') upgrade your browser
+      to improve your experience.
+    -->
+    <div class="modal-holder"></div>
+    <header class="site-head">
+      <div class="site-head__nav"><a href="/" class="site-head__logo">Beemarket</a><span class="nav-trigger fa fa-bars"></span></div>
+      <div class="site-head__wrap">
+        <nav class="list-unstyled head-nav">
+          <li class="head-nav__item head-nav__item--notification"><a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="head-nav__option head-nav__option--notification"><i class="fa fa-bell-o option__icon"></i><span class="badge badge-danger badge-xs">3</span></a>
+            <div class="panel panel-default dropdown-menu">
+              <div class="panel-heading">
+                <p class="panel-title">You have : <strong>3</strong> new notifications</p>
+              </div>
+              <ul class="list-unstyled noti-menu">
+                <li class="noti-menu__item"><a href="#" class="noti-menu__message clearfix"><i class="fa fa-bolt noti-menu__message__type left"></i>
+                    <div class="noti-menu__message__body left"><strong class="noti-menu__message__title">New app updated</strong><span class="small">few secs ago</span></div></a></li>
+                <li class="noti-menu__item"><a href="#" class="noti-menu__message clearfix"><i class="fa fa-info noti-menu__message__type left"></i>
+                    <div class="noti-menu__message__body left"><strong class="noti-menu__message__title">Jhon left message</strong><span class="small">3 min ago</span></div></a></li>
+                <li class="noti-menu__item"><a href="#" class="noti-menu__message clearfix"><i class="fa fa-bolt noti-menu__message__type left"></i>
+                    <div class="noti-menu__message__body left"><strong class="noti-menu__message__title">New app updated</strong><span class="small">2 hours ago</span></div></a></li>
+              </ul>
+              <div class="panel-footer">
+                <p class="small zero"><a href="#">View all notifications</a><i class="fa fa-circle-o-notch right"></i></p>
+              </div>
+            </div>
+          </li>
+          <li class="head-nav__item head-nav__item--profile dropdown"><a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="head-nav__option head-nav__option--profile"><img src="images/admin.jpg" alt="" class="img-circle option__profile"></a>
+            <div class="panel panel-default dropdown-menu">
+              <div class="panel-body">
+                <figure class="profile__photo left"><img src="images/admin.jpg" alt="" class="img-responsive"><a href="#">Foto</a></figure>
+                <div class="profile__info right">
+                  <p><strong>Cassandra Barrett</strong></p>
+                  <p>cassandra.b@gmail.com</p><a href="#" class="btn btn-primary btn-xs">Ver Perfil</a>
+                </div>
+              </div>
+              <div class="panel-footer clearfix"><a href="#" class="btn btn-default btn-sm left">Cuenta</a><a href="#" class="btn btn-default btn-sm btn-primary right">Cerrar Sesión</a></div>
+            </div>
+          </li>
+        </nav>
+      </div>
+    </header>
+    <div class="main-container clearfix">
+      <aside class="nav-wrap">
+        <nav class="site-nav clearfix">
+          <ul class="list-unstyled nav-list">
+            <li class="nav-list__item active"><a href="javascript:;" class="nav-list__link"><i class="fa fa-desktop nav-list__link__icon"></i><span class="nav-list__link__label">Dashboard</span></a></li>
+            <li class="nav-list__item"><a href="javascript:;" class="nav-list__link"><i class="fa fa-user nav-list__link__icon"></i><span class="nav-list__link__label">Usuarios</span><i class="fa fa-angle-right right nav-list__link__icon--arrow"></i></a>
+              <ul class="list-unstyled sub-nav-list">
+                <li class="sub-nav-list__item"><a href="">Todos los Clientes</a></li>
+                <li class="sub-nav-list__item"><a href="">Nuevo Cliente</a></li>
+              </ul>
+            </li>
+            <li class="nav-list__item"><a href="javascript:;" class="nav-list__link"><i class="fa fa-users nav-list__link__icon"></i><span class="nav-list__link__label">Clientes</span><i class="fa fa-angle-right right nav-list__link__icon--arrow"></i></a>
+              <ul class="list-unstyled sub-nav-list">
+                <li class="sub-nav-list__item"><a href="https://www.google.com.mx/?gfe_rd=cr&amp;ei=KCG7VI7mKISn8wem44DQBg&amp;gws_rd=ssl">Todos los Clientes</a></li>
+                <li class="sub-nav-list__item"><a href="">Nuevo Cliente</a></li>
+              </ul>
+            </li>
+            <li class="nav-list__item"><a href="javascript:;" class="nav-list__link"><i class="fa fa-gears nav-list__link__icon"></i><span class="nav-list__link__label">Configuración</span><i class="fa fa-angle-right right nav-list__link__icon--arrow"></i></a>
+              <ul class="list-unstyled sub-nav-list">
+                <li class="sub-nav-list__item"><a href="">Métodos de Envío</a></li>
+                <li class="sub-nav-list__item"><a href="">Métodos de Pago</a></li>
+                <li class="sub-nav-list__item"><a href="">Eventos</a></li>
+              </ul>
+            </li>
+            <li class="nav-list__item"><a href="javascript:;" class="nav-list__link"><i class="fa fa-barcode nav-list__link__icon"></i><span class="nav-list__link__label">Productos</span><i class="fa fa-angle-right right nav-list__link__icon--arrow"></i></a>
+              <ul class="list-unstyled sub-nav-list">
+                <li class="sub-nav-list__item"><a href="">Todos los Productos</a></li>
+                <li class="sub-nav-list__item"><a href="">Nuevo Producto</a></li>
+              </ul>
+            </li>
+            <li class="nav-list__item"><a href="#" class="nav-list__link"><i class="fa fa-cubes nav-list__link__icon"></i><span class="nav-list__link__label">Pedidos</span></a></li>
+          </ul>
+        </nav>
+      </aside>
+      <div class="content-container">
+        <div class="page schedules">
+          <div class="page-head"></div>
+          <div class="page-wrap">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="panel">
+                  <div class="panel-heading"><span>Nombre del panel</span></div>
+                  <div class="panel-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis quibusdam at nam illum officia ducimus perferendis veritatis, temporibus omnis id debitis optio, molestias maxime, neque ullam quisquam quaerat dicta accusamus.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div id="schedule"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="panel">
+                  <button class="btn btn-primary btn-sm">Primary</button>
+                  <button class="btn btn-success btn-sm">Succes</button>
+                  <button class="btn btn-danger btn-sm">Danger</button>
+                  <button class="btn btn-warning btn-sm">Warning</button>
+                  <button class="btn btn-info btn-sm">Info</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- build:js scripts/vendor.js-->
+    <!-- bower:js-->
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- endbower-->
+    <!-- endbuild-->
+    <!-- build:js scripts/plugins.js-->
+    <script type="text/javascript" src="bower_components/perfect-scrollbar/min/perfect-scrollbar.min.js"></script>
+    <script type="text/javascript" src="bower_components/jquery-validate/dist/jquery.validate.js"></script>
+    <script type="text/javascript" src="bower_components/jquery-validate/dist/jquery.validate.bootstrap.js"></script>
+    <script type="text/javascript" src="scripts/jquery.debounce.js"></script>
+    <!-- endbuild-->
+    <!-- build:js scripts/main.js-->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild-->
+  </body>
+</html>

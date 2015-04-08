@@ -1,0 +1,61 @@
+html,
+body
+  height 100%
+  min-height 100%
+
+body
+  text-rendering optimizeLegibility !important
+  -webkit-font-smoothing aniatalised !important
+  height 100%
+  min-height 100%
+  background-color darken(white_colors[0], 8%)
+  letter-spacing .5px
+  color black_colors[3]
+
+a:active, a:selected, a:visited
+  border none
+  outline none
+.main-container
+  width 100%
+  overflow hidden
+  min-height 99.92%
+  position relative
+  .content-container
+    size 100% 100%
+    margin-top 120px
+.page
+  padding 1em
+  margin-bottom 2em
+  .page-wrap
+    > .row
+      padding 0 1em
+.admin
+  &.off-canvas
+    .content-container
+
+      margin-left 280px
+  &.nav-min
+    .content-container
+      width calc( unquote('100% - 60px'))
+      margin-left 60px
+.panel
+  border-radius 0
+  .panel-heading
+    color: black_colors[3]
+    font-size: 11px
+    font-weight bold
+    text-transform: uppercase
+    width: 100%
+    border-bottom: 1px solid #eee
+    background: #fff
+
+@media only screen and (min-width : 768px)
+  .admin
+    &.nav-min
+      .content-container
+        width calc( unquote('100% - 60px'))
+  .main-container
+    .content-container
+      margin-top 60px
+      width calc( unquote('100% - 280px'))
+      margin-left 280px
